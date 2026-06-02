@@ -21,6 +21,6 @@ Robotics researcher building perception-action systems that work outside control
 
 ## Links
 
-[Website](https://tahamousa2023-prog.github.io) · [LinkedIn](https://linkedin.com/in/taha-mahmoud) · Berlin, Germany
+[Website]() · [LinkedIn](https://linkedin.com/in/taha-mahmoud) · Berlin, Germany
 
 Open to PhD positions and research engineer roles in robotics and AI.
