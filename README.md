@@ -3,7 +3,7 @@
 <p align="center">
   <strong>Mechatronics Engineer · MSc Computational Engineering Science · TU Berlin</strong><br/>
   Robotics researcher building perception-action systems that work <em>outside</em> controlled lab conditions.<br/>
-  Experience at <strong>Siemens AG</strong> (4.5 years) · <strong>Fraunhofer IPK</strong> (Master Thesis) · <strong>TU Berlin</strong>
+  Previously at <strong>Siemens AG</strong> (4.5 yrs) · <strong>Fraunhofer IPK</strong> (Master Thesis) · <strong>TU Berlin</strong>
 </p>
 
 <p align="center">
@@ -13,41 +13,66 @@
   <a href="https://tahamousa2023-prog.github.io">
     <img src="https://img.shields.io/badge/Portfolio-1a1a2e?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
-  <img src="https://img.shields.io/badge/Berlin,_Germany-📍-333333?style=for-the-badge" />
+  <a href="https://github.com/Arena-Rosnav">
+    <img src="https://img.shields.io/badge/Arena--Rosnav_User-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/Open_to_PhD-FF375F?style=for-the-badge&logo=academia&logoColor=white" />
 </p>
 
 ---
 
-## 🚀 Active Research Projects
+## 🎯 Research Focus
 
-### 🤖 [Path Matters](https://github.com/tahamousa2023-prog/path-matters-robotics) — RL-Driven 3D Reconstruction
-> **TU Berlin · WiSe 25/26**
+I build systems where robots must **perceive, decide, and act** in environments they were not explicitly designed for. My work sits at the intersection of:
 
-Reinforcement learning camera trajectory optimisation for robotic 3D reconstruction in uncontrolled environments. Built on a **UR5e** arm inside **NVIDIA Isaac Sim**, using a custom **PPO** policy trained with **RSL-RL**.
+- **Reinforcement Learning for Robot Control** — PPO-based agents for camera trajectory optimisation and viewpoint selection, trained in [Arena-Rosnav / Isaac Sim](https://github.com/Arena-Rosnav)
+- **3D Perception & Reconstruction** — RGB-D sensor fusion, ICP/FPFH registration, VGGT-based surface fitting
+- **Vision-Based Robot Calibration** — ResNet-18 CNNs for intelligent pose selection in TCP calibration (Fraunhofer IPK)
+- **Sim-to-Real Transfer** — Deployable pipelines from Isaac Sim → UR5e physical robot
 
-- 🏆 **VGGT Fitness Score:** `0.93` — near-perfect surface reconstruction
-- 📈 **PPO Task Success:** `45.2%` vs `0.4%` random baseline — **113× improvement**
-- 🔧 Stack: `ROS2` · `Isaac Sim` · `VGGT` · `BUFFER-X` · `ICP` · `PPO`
+> These research directions align directly with the **Social Navigation, Embodied AI, and Simulation Infrastructure** tracks at [ARENA Lab](https://arena-lab.org) and [Arena-Rosnav](https://github.com/Arena-Rosnav).
+
+---
+
+## 🚀 Research Projects
+
+### 🤖 [Path Matters](https://github.com/tahamousa2023-prog/path-matters-robotics) — RL Camera Trajectory for 3D Reconstruction
+> **TU Berlin · WiSe 25/26 · Built on Arena-Rosnav / Isaac Sim**
+
+PPO-based camera trajectory optimisation for robotic 3D reconstruction. A UR5e agent learns **where to look** to maximise surface coverage — trained entirely in NVIDIA Isaac Sim using the Arena-Rosnav infrastructure.
+
+| Metric | Result | Baseline |
+|--------|--------|----------|
+| VGGT Fitness Score | **0.93** | — |
+| PPO Task Success | **45.2%** | 0.4% (random) |
+| Improvement | **113×** | — |
+
+`ROS2` `Isaac Sim` `PPO (RSL-RL)` `VGGT` `BUFFER-X` `ICP` `UR5e`
 
 ---
 
 ### 🔬 [TCP Calibration — Fraunhofer IPK](https://github.com/tahamousa2023-prog/tcp-calibration-fraunhofer) — CNN Pose Selection
 > **Fraunhofer IPK · Master Thesis**
 
-**ResNet-18** CNN trained to select the optimal subset of calibration poses for robot TCP accuracy — replacing brute-force 40-pose protocols with a smarter 5-pose selection.
+ResNet-18 CNN trained to select the **optimal 5-pose subset** from a 40-pose calibration protocol — replacing brute-force with learned geometric intuition.
 
-- ⚡ **87.5% faster** calibration pipeline
-- 🎯 **76% more accurate** than full random-pose baseline
-- 🔧 Stack: `PyTorch` · `ResNet-18` · `UR5e` · `ROS2`
+| Metric | Result |
+|--------|--------|
+| Calibration Speed | **87.5% faster** |
+| Accuracy | **76% more accurate** than full random baseline |
+
+`PyTorch` `ResNet-18` `UR5e` `ROS2`
 
 ---
 
 ### 👁️ [RL Viewpoint Selection](https://github.com/tahamousa2023-prog/rl-viewpoint-selection) — PPO Camera Agent
 > **TU Berlin**
 
-**PPO agent** trained in **Isaac Lab** to learn optimal camera viewpoints for object inspection and 3D coverage — achieving a **113× improvement** over the no-reward-shaping baseline.
+PPO agent trained in Isaac Lab to learn optimal camera viewpoints for object inspection and 3D coverage.
 
-- 🔧 Stack: `Isaac Lab` · `PPO` · `RSL-RL` · `Python` · `CUDA`
+- **113× improvement** over no-reward-shaping baseline
+
+`Isaac Lab` `PPO` `RSL-RL` `Python` `CUDA`
 
 ---
 
@@ -58,8 +83,9 @@ Reinforcement learning camera trajectory optimisation for robotic 3D reconstruct
   <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
   <img src="https://img.shields.io/badge/Isaac_Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/Isaac_Lab-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arena--Rosnav-FF6B35?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/MoveIt2-2E86AB?style=for-the-badge&logo=ros&logoColor=white" />
-  <img src="https://img.shields.io/badge/UR5e-EA4335?style=for-the-badge&logo=universalrobots&logoColor=white" />
+  <img src="https://img.shields.io/badge/UR5e-EA4335?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
 </p>
 
@@ -67,18 +93,20 @@ Reinforcement learning camera trajectory optimisation for robotic 3D reconstruct
 <p>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/PPO_(RSL--RL)-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/ResNet-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/ResNet--18-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
   <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Stable_Baselines3-FF9900?style=for-the-badge&logoColor=white" />
 </p>
 
 ### 🗺️ 3D Perception & Reconstruction
 <p>
-  <img src="https://img.shields.io/badge/ICP-1a1a2e?style=for-the-badge&logo=pointcloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/ICP-1a1a2e?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/FPFH-2E4057?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/BUFFER--X-6B4226?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/Open3D-E95420?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/RGB--D_Fusion-0D7377?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/VGGT-0D7377?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/RGB--D_Fusion-333333?style=for-the-badge&logoColor=white" />
 </p>
 
 ### ⚙️ Systems & Languages
@@ -87,25 +115,63 @@ Reinforcement learning camera trajectory optimisation for robotic 3D reconstruct
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/PLC-E34F26?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/DCS-333333?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/PLC_(Siemens)-009999?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/DCS_(SPPA--T3000)-E84545?style=for-the-badge&logoColor=white" />
 </p>
 
 ---
 
-## 🌐 Let's Connect
+## 🔬 Research Interests
+
+```
+Social Robot Navigation          Sim-to-Real Transfer
+Reinforcement Learning           3D Scene Reconstruction
+Vision-Based Robot Control       Human-Robot Interaction
+Foundation Models for Robotics   Embodied AI
+```
+
+---
+
+## 🏭 Industry Background
+
+4.5 years at **Siemens AG** through the **Europeans@Siemens** programme:
+- PLC programming for industrial automation
+- Machine vision systems integration
+- Robotics process automation
+- Control of a **4800 MW power plant** (SPPA-T3000 DCS)
+
+> Industrial deployment experience is rare in academic robotics. I think in terms of **what actually works outside the lab** — not just benchmark numbers.
+
+---
+
+## 📊 Coding Practice
+
+<p>
+  <a href="https://github.com/tahamousa2023-prog/algo-arena">
+    <img src="https://img.shields.io/badge/LeetCode_Repo-algo--arena-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  </a>
+  <a href="https://leetcode.com/u/taha_1/">
+    <img src="https://img.shields.io/badge/LeetCode-taha__1-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  </a>
+</p>
+
+Structured algorithm practice in Python & C++ — Arrays, Trees, Graphs, DP, Backtracking.
+
+---
+
+## 🌐 Connect
 
 <p>
   <a href="https://linkedin.com/in/taha-mahmoud">
     <img src="https://img.shields.io/badge/LinkedIn-Taha_Mahmoud-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://tahamousa2023-prog.github.io">
-    <img src="https://img.shields.io/badge/Website-Portfolio-1a1a2e?style=for-the-badge&logo=githubpages&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-Website-1a1a2e?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
 </p>
 
-📬 **Open to:** PhD positions and research engineer roles in **robotics** and **AI**
+📍 Berlin, Germany · 📬 Open to **PhD positions** and **Research Engineer** roles in robotics and AI
 
 ---
 
-> *"The question is not whether intelligent machines can think. The question is whether intelligent machines can act usefully in a world they did not expect."*
+> *"The question is not whether intelligent machines can think. The question is whether they can act usefully in a world they did not expect."*
