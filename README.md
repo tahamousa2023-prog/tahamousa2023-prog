@@ -13,10 +13,7 @@
   <a href="https://tahamousa2023-prog.github.io">
     <img src="https://img.shields.io/badge/Portfolio-1a1a2e?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
-  <a href="https://github.com/Arena-Rosnav">
-    <img src="https://img.shields.io/badge/Arena--Rosnav_User-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
-  </a>
-  <img src="https://img.shields.io/badge/Open_to_PhD-FF375F?style=for-the-badge&logo=academia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open_to_PhD-FF375F?style=for-the-badge&logoColor=white" />
 </p>
 
 ---
@@ -25,21 +22,19 @@
 
 I build systems where robots must **perceive, decide, and act** in environments they were not explicitly designed for. My work sits at the intersection of:
 
-- **Reinforcement Learning for Robot Control** — PPO-based agents for camera trajectory optimisation and viewpoint selection, trained in [Arena-Rosnav / Isaac Sim](https://github.com/Arena-Rosnav)
+- **Reinforcement Learning for Robot Control** — PPO-based agents for camera trajectory optimisation and viewpoint selection, trained in NVIDIA Isaac Sim using the Arena-Rosnav simulation framework
 - **3D Perception & Reconstruction** — RGB-D sensor fusion, ICP/FPFH registration, VGGT-based surface fitting
 - **Vision-Based Robot Calibration** — ResNet-18 CNNs for intelligent pose selection in TCP calibration (Fraunhofer IPK)
 - **Sim-to-Real Transfer** — Deployable pipelines from Isaac Sim → UR5e physical robot
-
-> These research directions align directly with the **Social Navigation, Embodied AI, and Simulation Infrastructure** tracks at [ARENA Lab](https://arena-lab.org) and [Arena-Rosnav](https://github.com/Arena-Rosnav).
 
 ---
 
 ## 🚀 Research Projects
 
 ### 🤖 [Path Matters](https://github.com/tahamousa2023-prog/path-matters-robotics) — RL Camera Trajectory for 3D Reconstruction
-> **TU Berlin · WiSe 25/26 · Built on Arena-Rosnav / Isaac Sim**
+> **TU Berlin · WiSe 25/26**
 
-PPO-based camera trajectory optimisation for robotic 3D reconstruction. A UR5e agent learns **where to look** to maximise surface coverage — trained entirely in NVIDIA Isaac Sim using the Arena-Rosnav infrastructure.
+PPO-based camera trajectory optimisation for robotic 3D reconstruction. A UR5e agent learns **where to look** to maximise surface coverage — trained in NVIDIA Isaac Sim using the Arena-Rosnav simulation framework.
 
 | Metric | Result | Baseline |
 |--------|--------|----------|
@@ -135,10 +130,15 @@ Foundation Models for Robotics   Embodied AI
 ## 🏭 Industry Background
 
 4.5 years at **Siemens AG** through the **Europeans@Siemens** programme:
-- PLC programming for industrial automation
-- Machine vision systems integration
-- Robotics process automation
-- Control of a **4800 MW power plant** (SPPA-T3000 DCS)
+
+| Area | Details |
+|------|---------|
+| **Robot Programming** | UR5e integration · ROS2/MoveIt2 · offline path planning · adaptive control |
+| **Machine Vision** | Vision-guided robotic systems · RGB-D sensor integration · CNN-based inspection |
+| **PLC & Industrial Automation** | Siemens TIA Portal · ladder logic · production line commissioning |
+| **Large-Scale Control Systems** | SPPA-T3000 DCS · control of a **4,800 MW power plant** |
+| **Safety & Compliance** | Industrial safety standards · risk assessment in live production environments |
+| **Commissioning & Ramp-up** | End-to-end deployment from design → testing → production handover |
 
 > Industrial deployment experience is rare in academic robotics. I think in terms of **what actually works outside the lab** — not just benchmark numbers.
 
@@ -155,7 +155,7 @@ Foundation Models for Robotics   Embodied AI
   </a>
 </p>
 
-Structured algorithm practice in Python & C++ — Arrays, Trees, Graphs, DP, Backtracking.
+Structured algorithm practice in Python & C++ — Arrays, Trees, Graphs, DP, Backtracking, Graph Search.
 
 ---
 
