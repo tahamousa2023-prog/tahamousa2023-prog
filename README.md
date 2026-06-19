@@ -143,7 +143,10 @@ Foundation Models for Robotics   Embodied AI
 > Industrial deployment experience is rare in academic robotics. I think in terms of **what actually works outside the lab** — not just benchmark numbers.
 
 ---
+### 🤝 [Robotic Viewpoint Acquisition for 3D Reconstruction](https://github.com/Adam-yes/robotic-viewpoint-acquisition-for-3d-reconstruction)
+> **TU Berlin · Collaboration with Prof. Adam · 2026**
 
+Active research collaboration on viewpoint acquisition strategies for robotic 3D reconstruction — directly extending my work on RL-based camera trajectory optimisation.
 ## 📊 Coding Practice
 
 <p>
