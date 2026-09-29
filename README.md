@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/badge/Portfolio-1a1a2e?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
   <img src="https://img.shields.io/badge/Open_to_PhD_&_Research_Roles-FF375F?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open_to_Automotive_&_E--Mobility_Roles-2A78D6?style=for-the-badge&logoColor=white" />
 </p>
 
 ---
@@ -39,6 +40,26 @@ I build systems where robots must **perceive, decide, and act** in environments 
 A modular simulation-based robotic inspection pipeline combining UR5e eye-in-hand acquisition, feed-forward 3D reconstruction (VGGT, Fast3R, SAM3D), point-cloud preprocessing, metric-scale correction, and ICP/FPFH registration-based evaluation. The study isolates camera orientation as a controllable acquisition variable, showing that object-pointing orientation increases mean registration fitness from 0.68 → 0.79 and reduces mean inlier RMSE from 0.035 m → 0.022 m across five scan patterns. A PPO-based coverage-learning module is analysed as a feasibility study for adaptive viewpoint acquisition.
 
 `VGGT` `Fast3R` `ICP/FPFH` `PPO` `Isaac Sim` `UR5e` `ROS2` `Open3D`
+
+---
+
+## 🚗 Automotive & E-Mobility
+
+### ⚡ [Hybrid Powertrain Energy Management](https://github.com/tahamousa2023-prog/hybrid-powertrain-energy-management) · Cost-Function Torque Split
+> **TU Berlin · Projekt elektrifizierter Antriebsstrang · SoSe 2026 · Team of four**
+
+Operating strategy for a P2 parallel hybrid in MATLAB/Simulink: every 10 ms it decides the torque split between engine and e-machine, the gear, the clutch and engine on/off, under Euro 6d emission limits and a charge-neutral battery. Validated on WLTC, RDE, a full Nürburgring Nordschleife lap and an unseen stress profile. The same problem, energy-optimal torque split between two machines, sits at the heart of every dual-motor EV.
+
+| Metric | Result |
+|--------|--------|
+| Fuel vs. engine-only, WLTC (charge-neutral) | **−9.1 %** |
+| Fuel vs. engine-only, RDE real driving | **−7.5 %** |
+| Torque-split candidates per 10 ms step | **150** |
+| Simulation speed | **≈ 25× real time** |
+
+`MATLAB` `Simulink` `Energy Management` `Hybrid Powertrain` `WLTC` `RDE` `Euro 6d`
+
+[Project page](https://tahamousa2023-prog.github.io/portfolio/p2-hybrid-energy-management/)
 
 ---
 
@@ -94,6 +115,15 @@ Active research collaboration contributing to the paper above — data preparati
 ---
 
 ## 💻 Tech Stack
+
+### 🚗 Automotive & Powertrain
+<p>
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Simulink-E16737?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hybrid_Energy_Management-2A78D6?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/WLTC_%26_RDE-555555?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Euro_6d_Emissions-555555?style=for-the-badge&logoColor=white" />
+</p>
 
 ### 🦾 Robotics & Simulation
 <p>
@@ -196,7 +226,7 @@ Structured algorithm practice in Python & C++ — Arrays, Trees, Graphs, DP, Bac
   </a>
 </p>
 
-📍 Berlin, Germany · 📬 Open to **PhD positions**, **Applied Science internships**, and **Research Engineer** roles in robotics, deep learning, and computer vision
+📍 Berlin, Germany · 📬 Open to **PhD positions**, **Applied Science internships**, and **Research Engineer** roles in robotics, deep learning, and computer vision as well as **automotive and e-mobility** roles in Berlin-Brandenburg
 
 ---
 
