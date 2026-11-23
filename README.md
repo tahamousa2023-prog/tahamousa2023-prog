@@ -3,7 +3,7 @@
 <p align="center">
   <strong>Mechatronics Engineer · MSc Computational Engineering Science · TU Berlin</strong><br/>
   Robotics researcher building perception-action systems that work <em>outside</em> controlled lab conditions.<br/>
-  Previously at <strong>Siemens AG</strong> (4.5 yrs) · <strong>Fraunhofer IPK</strong> (Master Thesis) · <strong>TU Berlin</strong>
+  Previously at <strong>Siemens AG</strong> (3.5 yrs) · <strong>Fraunhofer IPK</strong> (Master Thesis) · <strong>TU Berlin</strong>
 </p>
 
 <p align="center">
@@ -23,10 +23,10 @@
 
 I build systems where robots must **perceive, decide, and act** in environments they were not explicitly designed for. My work sits at the intersection of:
 
-- **Reinforcement Learning for Robot Control** — PPO-based agents for camera trajectory optimisation and viewpoint selection, trained in NVIDIA Isaac Sim using the Arena-Rosnav simulation framework
+- **Reinforcement Learning for Robot Control** — PPO-based agents for camera trajectory optimisation and viewpoint selection, trained in NVIDIA Isaac Lab
 - **3D Perception & Reconstruction** — RGB-D sensor fusion, ICP/FPFH registration, VGGT-based surface fitting
 - **Vision-Based Robot Calibration** — ResNet-18 CNNs for intelligent pose selection in TCP calibration (Fraunhofer IPK)
-- **Sim-to-Real Transfer** — Deployable pipelines from Isaac Sim → UR5e physical robot
+- **Sim-to-Real Transfer** — Closing the gap between Isaac Sim experiments and physical UR5e robots
 
 ---
 
@@ -68,19 +68,19 @@ Operating strategy for a P2 parallel hybrid in MATLAB/Simulink: every 10 ms it d
 ### 🤖 [Path Matters](https://github.com/tahamousa2023-prog/path-matters-robotics) — RL Camera Trajectory for 3D Reconstruction
 > **TU Berlin · WiSe 25/26**
 
-PPO-based camera trajectory optimisation for robotic 3D reconstruction. A UR5e agent learns **where to look** to maximise surface coverage — trained in NVIDIA Isaac Sim using the Arena-Rosnav simulation framework.
+PPO-based camera trajectory optimisation for robotic 3D reconstruction. A UR5e agent learns **where to look** to maximise surface coverage, trained with PPO in NVIDIA Isaac Lab. The project also compares reconstruction backbones and camera orientation strategies.
 
-| Metric | Result | Baseline |
-|--------|--------|----------|
-| VGGT Fitness Score | **0.93** | — |
-| PPO Task Success | **45.2%** | 0.4% (sparse reward) |
-| vs Random Exploration | — | 0% success |
+| Metric | Result | Comparison |
+|--------|--------|------------|
+| Best reconstruction backbone (VGGT), ICP fitness | **0.93** | Fast3R 0.89 · SAM3D 0.91 |
+| Object-pointing camera orientation, mean ICP fitness | **0.79** | 0.68 fixed-downward |
+| PPO task success with proximity reward shaping | **45.2%** | 0.4% with sparse coverage reward only |
 
 `ROS2` `Isaac Sim` `PPO (RSL-RL)` `VGGT` `BUFFER-X` `ICP` `UR5e`
 
 ---
 
-### 🔬 [TCP Calibration — Fraunhofer IPK](https://github.com/tahamousa2023-prog/tcp-calibration-fraunhofer) — CNN Pose Selection
+### 🔬 TCP Calibration — Fraunhofer IPK — CNN Pose Selection
 > **Fraunhofer IPK · Master Thesis**
 
 ResNet-18 CNN trained to select the **optimal 5-pose subset** from a 40-pose calibration protocol — replacing brute-force with learned geometric intuition.
@@ -88,9 +88,11 @@ ResNet-18 CNN trained to select the **optimal 5-pose subset** from a 40-pose cal
 | Metric | Result |
 |--------|--------|
 | Calibration Speed | **87.5% faster** |
-| Accuracy | **76% more accurate** than full random baseline |
+| Accuracy | **76% better** (5 selected poses vs 40 random poses) |
 
-`PyTorch` `ResNet-18` `UR5e` `ROS2`
+`PyTorch` `ResNet-18` `ROS2` `Computer Vision`
+
+Source code and data belong to Fraunhofer IPK and are not public. Summary: [project page](https://tahamousa2023-prog.github.io/portfolio/fraunhofer-tcp-calibration/)
 
 ---
 
@@ -99,7 +101,7 @@ ResNet-18 CNN trained to select the **optimal 5-pose subset** from a 40-pose cal
 
 PPO agent trained in Isaac Lab to learn optimal camera viewpoints for object inspection and 3D coverage.
 
-- **45.2% task success** with proximity-shaped reward vs **0%** for random exploration baseline
+- **45.2% task success** with proximity-shaped reward vs **0.4%** with a sparse coverage reward only
 
 `Isaac Lab` `PPO` `RSL-RL` `Python` `CUDA`
 
@@ -130,7 +132,6 @@ Active research collaboration contributing to the paper above — data preparati
   <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
   <img src="https://img.shields.io/badge/Isaac_Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/Isaac_Lab-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arena--Rosnav-FF6B35?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/MoveIt2-2E86AB?style=for-the-badge&logo=ros&logoColor=white" />
   <img src="https://img.shields.io/badge/UR5e-EA4335?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
@@ -142,7 +143,7 @@ Active research collaboration contributing to the paper above — data preparati
   <img src="https://img.shields.io/badge/Deep_Learning-412991?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/Reinforcement_Learning-FF6B35?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/PPO_(RSL--RL)-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/ResNet--18-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/ResNet--18-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
   <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/Stable_Baselines3-FF9900?style=for-the-badge&logoColor=white" />
@@ -176,8 +177,8 @@ Active research collaboration contributing to the paper above — data preparati
 ```
 Reinforcement Learning               Computer Vision
 Deep Learning for Robotics           3D Scene Reconstruction
-Social Robot Navigation              Sim-to-Real Transfer
-Vision-Based Robot Control           Human-Robot Interaction
+Robot Calibration                    Sim-to-Real Transfer
+Vision-Based Robot Control           Active Perception
 Foundation Models for Robotics       Embodied AI
 ```
 
@@ -185,16 +186,15 @@ Foundation Models for Robotics       Embodied AI
 
 ## 🏭 Industry Background
 
-4.5 years at **Siemens AG** through the **Europeans@Siemens** programme:
+3.5 years at **Siemens AG** through the **Europeans@Siemens** programme (August 2019 to February 2023):
 
 | Area | Details |
 |------|---------|
-| **Robot Programming** | UR5e integration · ROS2/MoveIt2 · offline path planning · adaptive control |
-| **Machine Vision** | Vision-guided robotic systems · RGB-D sensor integration · CNN-based inspection |
-| **PLC & Industrial Automation** | Siemens TIA Portal · ladder logic · production line commissioning |
-| **Large-Scale Control Systems** | SPPA-T3000 DCS · control of a **4,800 MW power plant** |
-| **Safety & Compliance** | Industrial safety standards · risk assessment in live production environments |
-| **Commissioning & Ramp-up** | End-to-end deployment from design → testing → production handover |
+| **PLC & Industrial Control** | PLC programming and industrial control systems for automation and Industry 4.0 |
+| **Machine Vision & Robotics** | Camera-based sorting system integrating a machine vision pipeline with a robotic arm (final project) |
+| **Large-Scale Control Systems** | Instrumentation and control at a **4,800 MW power plant** with the SPPA-T3000 DCS |
+| **Electrical Systems** | High-voltage systems and control cabinet wiring to DIN-VDE standards |
+| **Embedded Systems** | Embedded systems and sensor integration for industrial automation |
 
 > Industrial deployment experience is rare in academic robotics. I think in terms of **what actually works outside the lab** — not just benchmark numbers.
 
